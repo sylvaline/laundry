@@ -1,0 +1,62 @@
+@import 'variable';
+@import 'news';
+@import 'training_and_support';
+@import 'whyus';
+@import 'layout';
+@import 'nav';
+@import 'investment';
+@import 'home';
+@import 'faq';
+@import 'about';
+@import 'footer';
+@import 'page_nav';
+@import 'page_layout';
+
+*,::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+
+    a{
+        text-decoration: none;
+        color: $text_color;
+    }
+
+    button{
+        outline: none;
+        border: none;
+        padding: 1em 1.5em;
+        background-color: $main_blue;
+        border-radius: .5em;
+        color: $main_white;
+        font-weight: 600;
+        transition: all .8s linear;
+        cursor: pointer;
+
+        a{
+            color: $main_white;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        &:hover{
+            background-color: rgb(37, 37, 37);
+        }
+       
+    }
+}
+
+.page_layout{
+    min-height: 20vh;
+    
+    h2{
+        text-align: center;
+        margin: 5em 0;
+    }
+}
